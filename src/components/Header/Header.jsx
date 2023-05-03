@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,8 +20,9 @@ const Header = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link className='fw-semibold' href="#action1">Home</Nav.Link>
-                            <Nav.Link className=' fw-semibold' href="#action1">Blog</Nav.Link>
+                            <Link className='me-4 fw-semibold text-decoration-none text-black' to="/">Home</Link>
+                            <Link className='fw-semibold text-decoration-none text-black' to="/">Blog</Link>
+                            
 
                         </Nav>
 
@@ -31,9 +33,9 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            
+
         </Container>
-        
+
     );
 };
 
