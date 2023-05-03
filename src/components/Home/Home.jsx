@@ -1,9 +1,21 @@
 import React from 'react';
+import Banner from '../Header/Banner/Banner';
+import Card from '../Card/Card';
+
+
 
 const Home = () => {
     return (
         <div>
-            <h4>This is Home</h4>
+            <section>
+                <div>
+                    <Banner></Banner>
+
+                </div>
+                <div>
+                    <Card></Card>
+                </div>
+            </section>
         </div>
     );
 };
