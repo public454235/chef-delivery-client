@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaGoogle, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaGoogle, FaPhoneAlt, FaRegEnvelope, FaTwitter } from 'react-icons/fa';
+import imge from '../../assets/cheff-tr.png'
 
 const Footer = () => {
     return (
@@ -29,10 +30,9 @@ const Footer = () => {
                     <p>Affiliates</p>
                 </div>
                 <div className="col">
-                    <h3 className='fw-bold mb-4'>Quick Links</h3>
-                    <p>Terms & Conditions</p>
-                    <p>Privacy Policy</p>
-                    <p>Affiliates</p>
+                    <h3 className='fw-bold mb-4'>Contact</h3>
+                    <p><FaPhoneAlt></FaPhoneAlt> +1-202-555-0116</p>
+                    <p><FaRegEnvelope></FaRegEnvelope>  hello@wecooked.io</p>
                 </div>
 
             </div>
