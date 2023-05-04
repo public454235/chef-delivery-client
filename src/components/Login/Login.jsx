@@ -34,7 +34,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error.message)
-                
+
             })
 
     }
@@ -84,9 +84,9 @@ const Login = () => {
                 </p>
             </Form>
 
-            <button className='btn btn-danger fw-semibold ' onClick={handleGoogleLogin}><FaGoogle></FaGoogle> Google Login</button>
+            <button className='btn btn-primary fw-semibold ' onClick={handleGoogleLogin}><FaGoogle></FaGoogle> Google Login</button>
             <br />
-            <button className='btn btn-danger fw-semibold ' onClick={handleGithubLogin}><FaGithub></FaGithub> Github Login</button>
+            <button className='btn btn-primary fw-semibold ' onClick={handleGithubLogin}><FaGithub></FaGithub> Github Login</button>
         </Container>
     );
 };

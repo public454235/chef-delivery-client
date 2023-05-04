@@ -13,6 +13,7 @@ import CardDetails from './components/CardDetails/CardDetails';
 import AuthProvider from './components/Providers/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import PrivateRoutes from './components/Routes/PrivateRoutes';
 
 
 const router = createBrowserRouter([
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/category/:_id',
-        element: <AuthProvider><CardDetails></CardDetails></AuthProvider>,
+        element: <PrivateRoutes><CardDetails></CardDetails></PrivateRoutes>,
         loader: ({ params }) => fetch(`http://localhost:5000/categories/${params._id}`)
 
       }

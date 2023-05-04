@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 
 
 const Register = () => {
@@ -34,7 +35,6 @@ const Register = () => {
             .catch(error => {
                 console.log(error)
                 setError(error.message)
-
 
             })
 
