@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/category/:_id',
-        element: <CardDetails></CardDetails>,
+        element: <AuthProvider><CardDetails></CardDetails></AuthProvider>,
         loader: ({ params }) => fetch(`http://localhost:5000/categories/${params._id}`)
 
       }

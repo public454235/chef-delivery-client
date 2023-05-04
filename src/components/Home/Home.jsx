@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Category from '../Category/Category';
 import Banners from '../Banners/Banners';
+import { Container } from 'react-bootstrap';
 
 const Home = () => {
     const [categories, setCategories] = useState([])
@@ -13,7 +14,7 @@ const Home = () => {
     },[])
     
     return (
-        <div>
+        <Container>
             <section>
                 <div>
                     <Banners></Banners>
@@ -29,7 +30,7 @@ const Home = () => {
                     }
                 </div>
             </section>
-        </div>
+        </Container>
     );
 };
 
