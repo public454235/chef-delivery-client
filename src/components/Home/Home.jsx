@@ -3,10 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Category from '../Category/Category';
 import Banners from '../Banners/Banners';
 
-
-
-
-
 const Home = () => {
     const [categories, setCategories] = useState([])
 
@@ -25,7 +21,7 @@ const Home = () => {
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         categories.map(category=> <Category
-                             key={category.id}  
+                             key={category._id}  
                              category={category}
 
                         ></Category>)

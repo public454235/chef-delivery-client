@@ -8,7 +8,11 @@ import {
 } from "react-router-dom";
 import Main from './components/Layout/Main';
 import Home from './components/Home/Home';
-import { Card } from 'react-bootstrap';
+import Blog from './components/Blog/Blog';
+import CardDetails from './components/CardDetails/CardDetails';
+import AuthProvider from './components/Providers/AuthProvider';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 
 const router = createBrowserRouter([
@@ -23,13 +27,22 @@ const router = createBrowserRouter([
       },
       {
         path: 'blog',
-        element: <Blob></Blob>
+        element: <Blog></Blog>
       },
       {
-        path: '/category/:id',
-        element: <Card></Card>,
-        loader: ({params})=>fetch(`http://localhost:5000/categories/${params.id}`)
-        
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'register',
+        element: <Register></Register>
+
+      },
+      {
+        path: '/category/:_id',
+        element: <CardDetails></CardDetails>,
+        loader: ({ params }) => fetch(`http://localhost:5000/categories/${params._id}`)
+
       }
     ]
   },
@@ -38,6 +51,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} ></RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router} ></RouterProvider>
+    </AuthProvider>
   </React.StrictMode>,
 )

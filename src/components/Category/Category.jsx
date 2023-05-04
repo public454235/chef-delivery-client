@@ -3,7 +3,7 @@ import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Category = ({ category }) => {
-    const { author, chef_name, picture, published_date, Likes, Recipes } = category
+    const { _id, author, chef_name, picture, published_date, Likes, Recipes } = category
     return (
         <Container>
             <div>
@@ -15,7 +15,7 @@ const Category = ({ category }) => {
                             <p className="card-text">Experience: {author.published_date}</p>
                             <p className="card-text">Likes: {author.Likes}</p>
                             <p className="card-text">Recipes: {author.Recipes}</p>
-                            <Link to={`/category/${category.id}`}><Button variant="danger">View Recipes</Button></Link>
+                            <Link to={`/category/${_id}`}><Button variant="danger">View Recipes</Button></Link>
                         </div>
                     </div>
                 </div>
