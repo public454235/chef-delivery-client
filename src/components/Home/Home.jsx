@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Category from '../Category/Category';
 import Banners from '../Banners/Banners';
 import { Container } from 'react-bootstrap';
+import DetailsBanner from '../DetailsBanner/DetailsBanner';
 
 const Home = () => {
     const [categories, setCategories] = useState([])
@@ -29,6 +30,7 @@ const Home = () => {
 
                     }
                 </div>
+                <DetailsBanner></DetailsBanner>
             </section>
         </Container>
     );

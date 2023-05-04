@@ -27,13 +27,13 @@ const CardDetails = () => {
                     <p className='mb-0'>Experience: {author?.published_date}</p>
                     <p className='mb-0'>Likes: {author?.Likes}</p>
                     <p>Recipes: {author?.Recipes}</p>
-                    <Button variant="danger">MORE INFO </Button>
+                    <Button className='mb-4' variant="danger">MORE INFO </Button>
 
                 </div>
                 <img src={thumbnail_url} className='card-img-top' alt="" />
 
             </div>
-            <div className='row  row-cols-md-3 row-cols-sm-1 mt-5 '>
+            <div className='row row-cols-1  row-cols-md-3 row-cols-sm-1 mt-5 '>
                 <div className='card col'>
                     <h3 className='mt-3'> Recipe: {recipes[0]?.title}</h3>
                     <h4>Ingredients: </h4>
@@ -45,9 +45,9 @@ const CardDetails = () => {
                         <li className='fw-semibold'> {recipes[0]?.ingredients[4]}</li>
                     </ol>
                     
-                    <h5 className='fw-semibold m-2 mb-3'><FaStar className='text-warning'></FaStar ><FaStar className='text-warning'></FaStar > <FaStar className='text-warning'></FaStar> <FaStar className='text-warning'></FaStar><FaStarHalfAlt className='text-warning'></FaStarHalfAlt></h5>
+                    <h5 className='fw-semibold m-2 mb-3'><FaStar className='text-danger'></FaStar ><FaStar className='text-danger'></FaStar > <FaStar className='text-danger'></FaStar> <FaStar className='text-danger'></FaStar><FaStarHalfAlt className='text-danger'></FaStarHalfAlt></h5>
                     
-                    <Button className='fw-semibold' variant='danger'>Favorite</Button>
+                    <Button className='fw-semibold' variant='primary'>Favorite</Button>
                 </div>
                 <div className='card col'>
                     <h3 className='mt-3'> Recipe: {recipes[1]?.title}</h3>
@@ -59,8 +59,8 @@ const CardDetails = () => {
                         <li className='fw-semibold'>{recipes[1]?.ingredients[3]}</li>
                         <li className='fw-semibold'>{recipes[1]?.ingredients[4]}</li>
                     </ol>
-                    <h5 className='fw-semibold m-2 mb-3'><FaStar className='text-warning'></FaStar ><FaStar className='text-warning'></FaStar > <FaStar className='text-warning'></FaStar> <FaStar className='text-warning'></FaStar><FaStarHalfAlt className='text-warning'></FaStarHalfAlt></h5>
-                    <Button className='fw-semibold' variant='danger'>Favorite</Button>
+                    <h5 className='fw-semibold m-2 mb-3'><FaStar className='text-danger'></FaStar ><FaStar className='text-danger'></FaStar > <FaStar className='text-danger'></FaStar> <FaStar className='text-danger'></FaStar><FaStarHalfAlt className='text-danger'></FaStarHalfAlt></h5>
+                    <Button className='fw-semibold' variant='primary'>Favorite</Button>
                 </div>
                 <div className='card col'>
                     <h3 className='mt-3'> Recipe: {recipes[2]?.title}</h3>
@@ -72,8 +72,8 @@ const CardDetails = () => {
                         <li className='fw-semibold'>{recipes[2]?.ingredients[3]}</li>
                         <li className='fw-semibold'>{recipes[2]?.ingredients[4]}</li>
                     </ol>
-                    <h5 className='fw-semibold m-2 mb-3'><FaStar className='text-warning'></FaStar ><FaStar className='text-warning'></FaStar > <FaStar className='text-warning'></FaStar> <FaStar className='text-warning'></FaStar><FaStarHalfAlt className='text-warning'></FaStarHalfAlt></h5>
-                    <Button className='fw-semibold' variant='danger'>Favorite</Button>
+                    <h5 className='fw-semibold m-2 mb-3'><FaStar className='text-danger'></FaStar ><FaStar className='text-danger'></FaStar > <FaStar className='text-danger'></FaStar> <FaStar className='text-danger'></FaStar><FaStarHalfAlt className='text-danger'></FaStarHalfAlt></h5>
+                    <Button className='fw-semibold' variant='primary'>Favorite</Button>
                     
                 </div>
             </div>

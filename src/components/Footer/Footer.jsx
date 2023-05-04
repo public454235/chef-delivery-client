@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='bg-dark text-white p-5 mb-0 mt-3'>
             <div className='row row-cols-1 row-cols-md-4 text-center'>
                 <div className="col">
-                    <h3 className='fw-bold'>Company</h3>
+                    <h3 className='fw-bold text-warning'>Company</h3>
                     <div className='mt-4'>
                         <p>About</p>
                         <p>We are hiring</p>
@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <h3 className='fw-bold mb-4'>Help</h3>
+                    <h3 className='fw-bold mb-4 text-warning'>Help</h3>
                     <p>Email Us</p>
                     <p>Help & FAQ</p>
                     <p>Make a Return</p>
@@ -24,25 +24,25 @@ const Footer = () => {
 
                 </div>
                 <div className="col">
-                    <h3 className='fw-bold mb-4'>Quick Links</h3>
+                    <h3 className='fw-bold mb-4 text-warning'>Quick Links</h3>
                     <p>Terms & Conditions</p>
                     <p>Privacy Policy</p>
                     <p>Affiliates</p>
                 </div>
                 <div className="col">
-                    <h3 className='fw-bold mb-4'>Contact</h3>
+                    <h3 className='fw-bold mb-4 text-warning'>Contact</h3>
                     <p><FaPhoneAlt></FaPhoneAlt> +1-202-555-0116</p>
-                    <p><FaRegEnvelope></FaRegEnvelope>  hello@wecooked.io</p>
+                    <p><FaRegEnvelope></FaRegEnvelope> hello@wecooked.io</p>
                 </div>
 
             </div>
-            <div className='mb-4 mt-4 text-center'>
-                <FaFacebook className='me-3 ' style={{ fontSize: '2rem' }}></FaFacebook>
-                <FaGoogle className='me-3' style={{ fontSize: '2rem' }}></FaGoogle>
-                <FaTwitter style={{ fontSize: '2rem' }}></FaTwitter>
+            <div className=' mt-5 text-center'>
+                <FaFacebook className='me-3 ' style={{ fontSize: '20px' }}></FaFacebook>
+                <FaGoogle className='me-3' style={{ fontSize: '20px' }}></FaGoogle>
+                <FaTwitter style={{ fontSize: '20px' }}></FaTwitter>
 
             </div>
-            <p className='footer-detail text-center mt-5 fw-semibold'><small>Copyright 2021 Cooked.</small></p>
+            <p className='footer-detail text-center mt-2 fw-semibold'><small>Copyright 2021 Cooked.</small></p>
         </div>
     );
 };
