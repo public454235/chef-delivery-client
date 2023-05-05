@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: '/category/:_id',
         element: <PrivateRoutes><CardDetails></CardDetails></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/categories/${params._id}`)
+        loader: ({ params }) => fetch(`https://dragon-sevre-assignment10-public454235.vercel.app/categories/${params._id}`)
 
       }
     ]
