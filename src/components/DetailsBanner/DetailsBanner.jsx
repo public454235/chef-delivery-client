@@ -12,13 +12,13 @@ const DetailsBanner = () => {
 
                 <div className='px-4'>
                     
-                    <h1>COUPLES DINNER <br/><span className='fw-bold text-black'>Amazing & Delicious Food
-                        This Is Photoshop's Version Of Lorem Ipsum.</span> </h1>
+                    <h1 className='fw-bold text-black'>COUPLES DINNER <br/>Amazing & Delicious Food
+                        This Is Photoshop's Version Of Lorem Ipsum. </h1>
                     <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus sit amet a augue. Sed non neque elit.</p>
-                    <Button variant="danger">MORE INFO </Button>
+                    <Button className='mb-2' variant="danger">MORE INFO </Button>
 
                 </div>
-                <img src={img} className='card-img-top' alt="" />
+                <img src={img} className=' card-img-top' alt="" />
 
             </div>
 

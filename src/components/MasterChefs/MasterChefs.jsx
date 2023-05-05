@@ -9,26 +9,35 @@ const MasterChefs = () => {
     return (
         <Container>
             <h1 className='text-center'> <small>Our</small> Master Chefs</h1>
-            <div className='d-lg-flex align-items-center my-5'>
-                <div>
+            <div className='d-lg-flex align-items-center my-5 gap-4'>
+                <div className='border rounded shadow-sm p-3 mb-5 bg-body-tertiary rounded'>
                     <img src={img1} className='card-img-top' alt="" />
-                    <h3 className='mt-3'>Christopher</h3>
-                    <p>CEO</p>
+                    <div className='ms-5'>
+                        <h3 className='mt-3'>Christopher</h3>
+                        <p>CEO</p>
+                    </div>
                 </div>
-                <div>
+                <div className='border rounded shadow-sm p-3 mb-5 bg-body-tertiary rounded'>
                     <img src={img2} className='card-img-top' alt="" />
-                    <h3 className='mt-3'>Kenneth</h3>
-                    <p>Chef</p>
+
+                    <div className='ms-5'>
+                        <h3 className='mt-3'>Kenneth</h3>
+                        <p>Chef</p>
+                    </div>
                 </div>
-                <div>
+                <div className='border rounded shadow-sm p-3 mb-5 bg-body-tertiary rounded'>
                     <img src={img3} className='card-img-top' alt="" />
-                    <h3 className='mt-3'>Matthew</h3>
-                    <p>Chef</p>
+                    <div className='ms-5'>
+                        <h3 className='mt-3'>Matthew</h3>
+                        <p>Chef</p>
+                    </div>
                 </div>
-                <div>
+                <div className=' border rounded shadow-sm p-3 mb-5 bg-body-tertiary rounded'>
                     <img src={img4} className='card-img-top' alt="" />
-                    <h3 className='mt-3'>Matthew</h3>
-                    <p>Head Chef</p>
+                    <div className='ms-5'>
+                        <h3 className='mt-3'>Matthew</h3>
+                        <p>Head Chef</p>
+                    </div>
                 </div>
             </div>
 
